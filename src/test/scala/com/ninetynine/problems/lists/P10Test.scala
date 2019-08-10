@@ -8,6 +8,6 @@ class P10Test extends FunSuite with Matchers {
 
   test("encode()") {
     val expected = List((4, 'a), (1, 'b), (2, 'c), (2, 'a), (1, 'd), (4, 'e))
-    P10.encode(inputList) shouldBe (expected)
+    P10.encode(inputList) shouldBe expected
   }
 }

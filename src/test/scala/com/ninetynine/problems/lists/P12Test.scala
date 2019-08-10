@@ -8,11 +8,11 @@ class P12Test extends FunSuite with Matchers {
 
   test("decode()") {
     val expected = List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)
-    P12.decode(inputList) shouldBe (expected)
+    P12.decode(inputList) shouldBe expected
   }
 
   test("decodeFunctional()") {
     val expected = List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)
-    P12.decodeFunctional(inputList) shouldBe (expected)
+    P12.decodeFunctional(inputList) shouldBe expected
   }
 }

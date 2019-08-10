@@ -8,7 +8,7 @@ class P14Test extends FunSuite with Matchers {
 
   test("duplicate()") {
     val expected = List('a, 'a, 'b, 'b, 'c, 'c, 'c, 'c, 'd, 'd)
-    P14.duplicate(inputList) shouldBe (expected)
+    P14.duplicate(inputList) shouldBe expected
   }
 
 }

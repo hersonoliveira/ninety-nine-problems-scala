@@ -8,7 +8,7 @@ class P11Test extends FunSuite with Matchers {
 
   test("encodeModified()") {
     val expected: List[Any] = List((4, 'a), 'b, (2, 'c), (2, 'a), 'd, (4, 'e))
-    P11.encodeModified(inputList) shouldBe (expected)
+    P11.encodeModified(inputList) shouldBe expected
   }
 
 }

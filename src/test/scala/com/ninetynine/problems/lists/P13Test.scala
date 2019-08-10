@@ -8,6 +8,6 @@ class P13Test extends FunSuite with Matchers {
 
   test("encodeDirect()") {
     val expected = List((4, 'a), (1, 'b), (2, 'c), (2, 'a), (1, 'd), (4, 'e))
-    P13.encodeDirect(inputList) shouldBe (expected)
+    P13.encodeDirect(inputList) shouldBe expected
   }
 }

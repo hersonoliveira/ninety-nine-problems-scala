@@ -8,7 +8,7 @@ class P09Test extends FunSuite with Matchers {
 
   test("pack()") {
     val expected = List(List('a, 'a, 'a, 'a), List('b), List('c, 'c), List('a, 'a), List('d), List('e, 'e, 'e, 'e))
-    P09.pack(inputList) shouldBe (expected)
+    P09.pack(inputList) shouldBe expected
   }
 
 }

@@ -8,12 +8,12 @@ class P15Test extends FunSuite with Matchers {
 
   test("duplicateN()") {
     val expected = List('a, 'a, 'a, 'b, 'b, 'b, 'c, 'c, 'c, 'c, 'c, 'c, 'd, 'd, 'd)
-    P15.duplicateN(3, inputList) shouldBe (expected)
+    P15.duplicateN(3, inputList) shouldBe expected
   }
 
   test("duplicateN2()") {
     val expected = List('a, 'a, 'a, 'b, 'b, 'b, 'c, 'c, 'c, 'c, 'c, 'c, 'd, 'd, 'd)
-    P15.duplicateN2(3, inputList) shouldBe (expected)
+    P15.duplicateN2(3, inputList) shouldBe expected
   }
 
 }

@@ -9,7 +9,7 @@ class P24Test extends FunSuite with Matchers {
     val inRange = (x: Int, end: Int) => x > 0 && x <= end
     result.size shouldBe (6)
     result.foreach {
-      num => inRange(num, 49) shouldBe (true)
+      num => inRange(num, 49) shouldBe true
     }
   }
 

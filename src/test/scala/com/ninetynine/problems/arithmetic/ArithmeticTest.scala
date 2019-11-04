@@ -12,4 +12,8 @@ class ArithmeticTest extends FunSuite with Matchers {
     7.isPrime shouldBe true
     9.isPrime shouldBe false
   }
+
+  test("gcd()") {
+    P32.gcd(36, 63) shouldBe 9
+  }
 }

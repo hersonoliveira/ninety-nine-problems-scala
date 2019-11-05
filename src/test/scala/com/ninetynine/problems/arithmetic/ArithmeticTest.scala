@@ -15,5 +15,15 @@ class ArithmeticTest extends FunSuite with Matchers {
 
   test("gcd()") {
     P32.gcd(36, 63) shouldBe 9
+    P32.gcd(7, 9) shouldBe 1
+  }
+
+  test("isCoprimeTo()") {
+    7.isCoprimeTo(9) shouldBe true
+    12.isCoprimeTo(2) shouldBe false
+  }
+
+  test("totient()") {
+    10.totient shouldBe 4
   }
 }
